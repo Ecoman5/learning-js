@@ -127,7 +127,121 @@ console.log(fav);
 
 
 // Numbers - 5 6.3 45000
+// math operators - + - * / ** %
+
+console.log(6 % 2); // 0
+console.log(5 % 2); // 1
+
+console.log(5 / 2); // 2.5
+// order of operation - bodmas,
+
+console.log(6 / 3 + 5); // 7 - 2
+
+let balance = 500;
+const t1 = 20;
+const t2 = 100;
+const d1 = 200;
+
+console.log(balance - t1 - t2 + d1);
+console.log(5 + 6 * 2 - 3); // 5 + 
+
+let post = 40;
+post += 15;
+post -= 15;
+post *= 2;
+post /= 5;
+
+console.log(post);
+
+let likes = 0;
+likes += 1;
+likes += 1;
+likes += 1;
+likes -= 1;
+likes++;
+likes--;
+likes++;
+likes--;
+
+console.log(likes);
+
+// NaN - not a number
+
+console.log(5 - "hello"); //NaN
+
+
+
 // Boolean - true and false
+console.log(true);
+console.log(false);
+
+const country = "Nigeria"
+const continent = "Africa"
+let population = 200000;
+
+console.log(country, continent,  population);
+
+
+
+const isIsland = false
+const language = "English"
+
+console.log(population / 2);
+
+population++;
+console.log(population);
+
+
+const describ = ` ${country}   is in   ${continent}   and its population of   ${population}  people speak  ${language}`
+
+console.log(describ);
+
+const describ2 = `${country} as a country speak Majorly ${language}`
+console.log(describ2);
+
+//BOOlEAN true or false
+
+// comparisim operators - < > <= >= ==
+// = assignment
+// == loose equality, === strict
+console.log(6 < 3);
+console.log(6 > 3); // true
+console.log(5 >= 5.0); // true
+console.log(4 == "4"); // true
+console.log(4 === "4"); // false
+
+
+// Logical Operators and &&  or || not !
+console.log(5 > 6 && 2 == 2);
+console.log(6 > 7 || 2 === 2);
+console.log("A" > "a");
+
+// typeof
+console.log(typeof describ2);
+
+//  string to Numbers
+const str = '90';
+console.log(typeof str);
+const converted = Number(str);
+console.log(typeof converted);
+
+// numbers to string
+
+const num = 900000;
+console.log(typeof num);
+const converted2 = String(num)
+console.log(typeof converted2);
+
+
+// type corecion
+
+
+const myName = "Solomon"
+console.log(myName.length);
+
+
+
+
 // Null - null
 // Undefined - undefined
 
