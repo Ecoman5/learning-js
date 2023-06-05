@@ -407,6 +407,157 @@ switch (grade) {
   break;
 }
 
+// ternary operation
+// if(condition){code 1}else{code 2}
+
+// condition ? action 1 : action 2
+15 > 7 ? console.log("Yes") : console.log("No");
+const num2 = 46;
+
+num2 % 2 === 0 
+  ? console.log("This is An Even number")
+  : console.log("This is An Odd number");
+
+// LOOPS - repitive tasks - for , while, do.. while loop
+
+// for (initializer let i = 0; condition i < 5; increment i++  ){code }
+
+// for (let i = 0; i < 10; i++) {
+// console.log(`In the loop ${i}`);
+// }
+// console.log("outside of the loop");
+
+//  initializer
+// while(condition){code increment}
+
+// let x = 0;
+// while (x < 20) {
+//   console.log("HELLO");
+//   x++;
+// }
+
+// let y = 50;
+// do {
+//   console.log("HEY");
+//   y++;
+// } while (y < 5);
+
+
+
+// functions
+const var1 = "John";
+
+// function declaration 
+function myFunction() {
+  console.log("HELLO CLASS");
+  console.log("YOU ARE WELCOME");
+}
+
+myFunction();
+
+function greet(name = "User", age = 18) {
+  console.log("WELCOME" + name + age);
+}
+
+greet("Solomon", 24)
+greet("Ebuka", 28)
+greet("Precious", 22)
+greet();
+greet("Ola")
+
+// calculate  the age of users
+// 2023 - YEAR
+
+function calcAge(year) {
+  const age = 2023 - year
+  console.log( `Your age is ${age}`);
+}
+
+calcAge(1960);
+calcAge(2000);
+
+function sumNums(a, b) {
+  console.log(`the sum of ${a} and ${b} is ${a + b}`);
+}
+
+sumNums(4.5, 78);
+sumNums(-45, 87);
+
+function describecountry(country, population, capitalcity) {
+  console.log(`${country} has ${population} million people and its capital city is ${capitalcity}`);
+}
+
+describecountry("France", 12, "Paris")
+describecountry("Nigeria", 3, "FCT")
+describecountry("Russia", 65, "Moscow")
+
+// check if an email is valid or not
+
+function checkEmail(email) {
+  if (email.includes("@")) {
+    console.log(`${email} is a valid email address`);
+    
+  } else {
+    console.log(`${email} is not a valid email`);
+  }
+}
+checkEmail("abc@gmai.com");
+
+// HOISTING -
+// function expression
+const myAge = 90;
+console.log(myAge);
+
+// myFunction2(4,5);
+const myFunction2 = function (a, b) {
+  console.log("anything");
+  console.log(a + b);
+};
+
+myFunction2(7, 8);
+// return keyword
+
+const Precious = function (a, b) {
+  console.log('Hello');
+  return a * b;
+  console.log("Hello");
+};
+
+Precious(9, 6);
+
+const test = Precious(10, 10);
+console.log(test);
+
+// create a function that calc average of the two teams
+// d - 103, 98, 89
+// k - 110, 87, 95
+
+const calcAverage = function (a, b, c) {
+  const avg = (a + b + c) / 3;
+  return Number(avg.toFixed(2))
+  
+};
+
+const avgDolphin2 = calcAverage(123, 98, 89);
+const avgKaola2 = calcAverage(110, 87, 95);
+console.log(avgDolphin2, avgKaola2);
+
+function checkWinner(teamA, teamB) {
+  if (teamA > teamB) {
+    console.log("First team won");
+  } else if (teamB > teamA) {
+    console.log("Second team won");
+  } else {
+    console.log("NO winner");
+  }
+}
+
+
+
+// arrays
+// object
+// asybchronous js 
+// DOM
 
 
 
