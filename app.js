@@ -444,120 +444,297 @@ num2 % 2 === 0
 
 
 
-// functions
-const var1 = "John";
+// // functions
+// const var1 = "John";
 
-// function declaration 
-function myFunction() {
-  console.log("HELLO CLASS");
-  console.log("YOU ARE WELCOME");
-}
+// // function declaration
+// function myFunction() {
+//   console.log("HELLO CLASS");
+//   console.log("YOU ARE WELCOME");
+// }
 
-myFunction();
+// myFunction();
 
-function greet(name = "User", age = 18) {
-  console.log("WELCOME" + name + age);
-}
+// function greet(name = "User", age = 18) {
+//   console.log("WELCOME" + name + age);
+// }
 
-greet("Solomon", 24)
-greet("Ebuka", 28)
-greet("Precious", 22)
-greet();
-greet("Ola")
+// greet("Solomon", 24)
+// greet("Ebuka", 28)
+// greet("Precious", 22)
+// greet();
+// greet("Ola")
 
-// calculate  the age of users
-// 2023 - YEAR
+// // calculate  the age of users
+// // 2023 - YEAR
 
-function calcAge(year) {
-  const age = 2023 - year
-  console.log( `Your age is ${age}`);
-}
+// function calcAge(year) {
+//   const age = 2023 - year
+//   console.log( `Your age is ${age}`);
+// }
 
-calcAge(1960);
-calcAge(2000);
+// calcAge(1960);
+// calcAge(2000);
 
-function sumNums(a, b) {
-  console.log(`the sum of ${a} and ${b} is ${a + b}`);
-}
+// function sumNums(a, b) {
+//   console.log(`the sum of ${a} and ${b} is ${a + b}`);
+// }
 
-sumNums(4.5, 78);
-sumNums(-45, 87);
+// sumNums(4.5, 78);
+// sumNums(-45, 87);
 
-function describecountry(country, population, capitalcity) {
-  console.log(`${country} has ${population} million people and its capital city is ${capitalcity}`);
-}
+// function describecountry(country, population, capitalcity) {
+//   console.log(`${country} has ${population} million people and its capital city is ${capitalcity}`);
+// }
 
-describecountry("France", 12, "Paris")
-describecountry("Nigeria", 3, "FCT")
-describecountry("Russia", 65, "Moscow")
+// describecountry("France", 12, "Paris")
+// describecountry("Nigeria", 3, "FCT")
+// describecountry("Russia", 65, "Moscow")
 
-// check if an email is valid or not
+// // check if an email is valid or not
 
-function checkEmail(email) {
-  if (email.includes("@")) {
-    console.log(`${email} is a valid email address`);
+// function checkEmail(email) {
+//   if (email.includes("@")) {
+//     console.log(`${email} is a valid email address`);
     
-  } else {
-    console.log(`${email} is not a valid email`);
-  }
-}
-checkEmail("abc@gmai.com");
+//   } else {
+//     console.log(`${email} is not a valid email`);
+//   }
+// }
+// checkEmail("abc@gmai.com");
 
-// HOISTING -
-// function expression
-const myAge = 90;
-console.log(myAge);
+// // HOISTING -
+// // function expression
+// const myAge = 90;
+// console.log(myAge);
 
-// myFunction2(4,5);
-const myFunction2 = function (a, b) {
-  console.log("anything");
-  console.log(a + b);
+// // myFunction2(4,5);
+// const myFunction2 = function (a, b) {
+//   console.log("anything");
+//   console.log(a + b);
+// };
+
+// myFunction2(7, 8);
+// // return keyword
+
+// const Precious = function (a, b) {
+//   console.log('Hello');
+//   return a * b;
+//   console.log("Hello");
+// };
+
+// Precious(9, 6);
+
+// const test = Precious(10, 10);
+// console.log(test);
+
+// // create a function that calc average of the two teams
+// // d - 103, 98, 89
+// // k - 110, 87, 95
+
+// const calcAverage = function (a, b, c) {
+//   const avg = (a + b + c) / 3;
+//   return Number(avg.toFixed(2))
+  
+// };
+
+// const avgDolphin2 = calcAverage(123, 98, 89);
+// const avgKaola2 = calcAverage(110, 87, 95);
+// console.log(avgDolphin2, avgKaola2);
+
+// function checkWinner(teamA, teamB) {
+//   if (teamA > teamB) {
+//     console.log("First team won");
+//   } else if (teamB > teamA) {
+//     console.log("Second team won");
+//   } else {
+//     console.log("NO winner");
+//   }
+// }
+
+
+
+// checkWinner(avgDolphin2, avgKaola2);
+// ARROW FUNCTION
+
+// const name = ()=>{}
+
+const logger = (a, b, c) => {
+  const total = a + b + c;
+  return total;
 };
 
-myFunction2(7, 8);
-// return keyword
+console.log(logger(4, 5, 7));
+// logger(3, 4, 5)
 
-const Precious = function (a, b) {
-  console.log('Hello');
-  return a * b;
-  console.log("Hello");
-};
+// const difference = (a, b) => {
+  //  return a - b;
+// };
 
-Precious(9, 6);
+const difference = (a, b) => a - b;
 
-const test = Precious(10, 10);
-console.log(test);
-
-// create a function that calc average of the two teams
-// d - 103, 98, 89
-// k - 110, 87, 95
+console.log(difference(67, 50));
 
 const calcAverage = function (a, b, c) {
   const avg = (a + b + c) / 3;
   return Number(avg.toFixed(2))
-  
 };
 
-const avgDolphin2 = calcAverage(123, 98, 89);
-const avgKaola2 = calcAverage(110, 87, 95);
-console.log(avgDolphin2, avgKaola2);
+// VARIABLE SCOPING - global local var
 
-function checkWinner(teamA, teamB) {
-  if (teamA > teamB) {
-    console.log("First team won");
-  } else if (teamB > teamA) {
-    console.log("Second team won");
-  } else {
-    console.log("NO winner");
-  }
-}
+const a = 5;
+console.log(a);
+
+const local = () => {
+  const a = 7;
+  const b = 8;
+  console.log(a);
+};
+local();
+// console.log(b);
+console.log(a);
+
+// arrays [elements, element, el]
+const student = ["Mofe", "Ebuka", "Precious"];
+console.log(student);
+// arrays properties and methods
+console.log(student.length);
+
+// get elemnt in arr
+console.log(student[0]);
+console.log(student[student.length - 1]);
+
+// converting an array to a string - tString, join
+console.log(student.toString());
+console.log(student.join(" "));
+// adding elements to an array  - push , unshift
+
+student.push("Ola");
+student.push("Zainab")
+console.log(student.push("Funsho"));
+console.log(student);
+
+student.unshift("Nike")
+student.unshift("Emma")
+
+console.log(student);
+
+// removing elements from an array pop shift 
+student.pop()
+student.pop()
+student.pop()
+
+
+student.shift()
+student.shift()
+student.shift()
+console.log(student);
+
+console.log(student.sort());
+console.log(student.reverse());
+console.log(student.includes());
+console.log(student.includes("Ebuka"));
+console.log(student.includes("Mofe"));
+
+// indexOf lastindexOf 
+const anotherStudent = ["Toyin", "Zainab"];
+console.log(student.concat(anotherStudent, ["Ayo", "Ade", "Ade"]));
 
 
 
-// arrays
+// includes, sort, pop, push, shift, unshift,
+// slice, splice, concat, join, toString
+
+console.log(student.slice(0, 2)); // 0, 1
+
+
+// filter, find, map, forEach
+
 // object
 // asybchronous js 
 // DOM
+
+const countries = ["Germany", "Sweden", "Belgium", "Nigeria", "Italy", "Canada" ]
+console.log(countries.length);
+
+if (countries.length > 5) {
+  console.log("Country is greater than 5");
+} else { 
+console.log("No");
+};
+
+let savings = 100000;
+const transactions = [5000, -10000, -100];
+
+transactions.push(-2000);
+transactions.push(50000);
+
+transactions.push(-3000);
+transactions.pop();
+console.log(transactions);
+let debit = 0;
+let credit = 0;
+
+for (i = 0; i < transactions.length; i++) {
+  // console.log(transactions[i]);
+  // savings = savings transaction[i]
+  savings += transactions[i];
+  if (transactions[i] < 0) {
+    debit += transactions[i];
+    console.log(`You have been debited ${transactions[i]}`);
+  } else {
+    credit += transactions[i];
+    console.log(`You have been credited ${transactions[i]}`);
+  }
+}
+console.log(`The total debit is ${debit}`);
+console.log(`The total credit is ${credit}`);
+
+console.log(`Your account balance is ${savings}`);
+
+// filter, find, map, forEach
+// higher order function, callback func
+const friends = ["John", "Jane", "Adam", "Jennifer", "Owen"];
+friends.includes("Lester");
+
+friends.forEach((friends, index) => {
+  console.log(`${index} The name of my friend is ${friends}`);
+});
+
+friends.forEach((f, index) => {
+  console.log(f, index);
+});
+
+
+// map 
+friends.map((val, index) => {
+  console.log(index);
+  if (val === "Jane" || val === 'Adam') {
+    console.log(`${val} is my best friend`);
+  } else {
+    console.log(`${val} is just my friend`);
+  }
+});
+
+// filter find
+
+const filteredFriends = friends.filter((friend) => {
+  return friend.length > 6;
+});
+console.log(filteredFriends);
+
+// Find
+
+const foundUser = friends.find((friends) => {
+  return friends.startsWith("J")
+});
+
+console.log(foundUser);
+
+const result = friends.filter((friends) => friends.length > 6);
+const result2 = friends.find((f) => f.startsWith("A"));
+
+console.log(result, result2);
 
 
 
